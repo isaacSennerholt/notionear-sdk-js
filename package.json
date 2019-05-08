@@ -1,0 +1,25 @@
+{
+  "name": "notionear-sdk-js",
+  "version": "1.0.0",
+  "description": "Notionear javascript sdk.",
+  "main": "index.js",
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "test-unit-all": "npm run test -- unit",
+    "test-int-all": "npm run test -- int --runInBand"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "create-crud-client": "git+https://github.com/isaacSennerholt/create-crud-client.git"
+  },
+  "devDependencies": {
+    "cross-env": "5.0.5",
+    "jest": "^23.6.0"
+  }
+}
