@@ -1,4 +1,10 @@
 module.exports = function(serviceClient) {
+  if (!serviceClient) {
+    throw new Error(
+      'A configured service client is required to initialize shop service api.'
+    )
+  }
+
   const serviceBaseUrl = 'http://localhost:3000'
   const serviceIdentifier = 'f13f'
   const shopServiceUrl = `${serviceBaseUrl}/${serviceIdentifier}/rest`
