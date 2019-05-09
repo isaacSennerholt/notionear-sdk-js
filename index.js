@@ -1,16 +1,17 @@
-const createServiceClient = require('./createServiceClient.js')
-const shopService = require('./shopService.js')
+const instServiceClient = require('./instServiceClient.js')
+const instShopServiceApi = require('./instShopServiceApi.js')
 
 module.exports = function(serviceClient) {
-  if (!serviceClient)
+  if (!serviceClient) {
     throw new Error(
       'A configured service client is required to initialize sdk.'
     )
+  }
 
-  const shopService = shopService(serviceClient)
+  const shopServiceApi = instShopServiceApi(serviceClient)
 
   return {
-    createServiceClient,
-    shopService
+    instServiceClient,
+    shopServiceApi
   }
 }

@@ -1,5 +1,7 @@
 module.exports = function(serviceClient) {
-  const shopServiceUrl = `${baseUrl}/f13f/rest`
+  const serviceBaseUrl = 'http://localhost:3000'
+  const serviceIdentifier = 'f13f'
+  const shopServiceUrl = `${serviceBaseUrl}/${serviceIdentifier}/rest`
 
   // Shop resource
   function createShop(payload) {
