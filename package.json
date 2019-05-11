@@ -2,7 +2,7 @@
   "name": "notionear-sdk-js",
   "version": "1.0.0",
   "description": "Notionear javascript sdk.",
-  "main": "index.js",
+  "main": "./lib/notionearSdkJs.js",
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/"
